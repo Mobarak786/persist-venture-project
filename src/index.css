@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: theme("fontFamily.primary");
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  @apply bg-background-light dark:bg-background-dark text-text-light-primary dark:text-text-dark-primary transition-colors duration-200;
+}
+
+input,
+select,
+textarea {
+  @apply border-gray-300 dark:border-gray-600 rounded-md shadow-sm bg-background-light dark:bg-background-dark text-text-light-primary dark:text-text-dark-primary;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  @apply ring-2 ring-primary-500 dark:ring-primary-400 border-primary-500 dark:border-primary-400;
+}
+
+h1 {
+  @apply text-h1;
+}
+h2 {
+  @apply text-h2;
+}
+h3 {
+  @apply text-h3;
+}
+h4 {
+  @apply text-h4;
+}
+h5 {
+  @apply text-h5;
+}
+h6 {
+  @apply text-h6;
+}
