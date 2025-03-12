@@ -1,5 +1,4 @@
 import { Dialog } from "@headlessui/react";
-import { motion } from "framer-motion";
 import type { Event } from "../../types";
 
 interface EventFormProps {
